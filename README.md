@@ -3,10 +3,15 @@
 This project transforms a messy, single-table flat CSV dataset into a structured, automated relational database environment using Microsoft SQL Server (T-SQL). The objective was to engineer advanced database objects (Views, Stored Procedures, and Window Functions) to optimize data retrieval and build an efficient data pipeline ready for Business Intelligence (BI) tools.
 
 ## 🏗️ Database Architecture
-The raw data was imported into a dedicated database engine sandbox environment. The storage architecture is organized as follows:
-Source Table: tech_layoffs (Contains raw multi-variable global layoff records)
-Analytical Views: Permanent virtual tables pre-aggregating core business benchmarks.
-Stored Procedures: Parametric automation scripts designed for dynamic dashboard filtering.
+The raw data was imported into a dedicated database engine sandbox environment. The storage scripts are organized as follows:
+*   📄 [1_aggregations.sql](./1_aggregations.sql) - Macro industry benchmarks.
+*   📄 [2_cte_and_case_logic.sql](./2_cte_and_case_logic.sql) - Operational impact scaling.
+*   📄 [3_Window_Function.sql](./3_Window_Function.sql) - Intra-industry ranking engine.
+*   📄 [4_stored_procedure.sql](./4_stored_procedure.sql) - Parametric database automation creation script.
+*   📄 [4_Use Stored Procedure.sql](./4_Use%20Stored%20Procedure.sql) - Execution instructions for stored procedures.
+*   📄 [5_View.sql](./5_View.sql) - Permanent aggregate view creation script.
+*   📄 [5_JOIN_View.sql](./5_JOIN_View.sql) - View joining for market share calculation.
+
 
 ## 🛠️ Key Technical Implementations & Code Showcases
 
